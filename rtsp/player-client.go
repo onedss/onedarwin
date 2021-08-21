@@ -88,7 +88,7 @@ func (client *PlayerClient) Start() observable.Observable {
 }
 
 func (client *PlayerClient) Request(method string, headers map[string]string) (resp *Response, err error) {
-	headers["User-Agent"] = "EasyDarwinGo"
+	headers["User-Agent"] = "OneDarwinGo"
 	if client.AuthHeaders {
 		//headers["Authorization"] = this.digest(method, _url);
 	}
@@ -200,7 +200,7 @@ func (client *PlayerClient) Request(method string, headers map[string]string) (r
  request(method, headers, _url) {
         _url = _url || `${this.origin}${this.pathname}${this.search}`;
         headers = headers || {};
-        headers["User-Agent"] = "EasyDarwin";
+        headers["User-Agent"] = "OneDarwin";
         if(this.authHeaders) {
             headers["Authorization"] = this.digest(method, _url);
         }

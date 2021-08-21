@@ -128,16 +128,16 @@ func (p *program) Stop(s service.Service) (err error) {
 }
 
 func main() {
-	log.SetPrefix("[EasyDarwin] ")
+	log.SetPrefix("[OneDarwin] ")
 	log.SetFlags(log.LstdFlags)
 	if utils.Debug {
 		log.SetFlags(log.Lshortfile | log.LstdFlags)
 	}
 	sec := utils.Conf().Section("service")
 	svcConfig := &service.Config{
-		Name:        sec.Key("name").MustString("EasyDarwin_Service"),
-		DisplayName: sec.Key("display_name").MustString("EasyDarwin_Service"),
-		Description: sec.Key("description").MustString("EasyDarwin_Service"),
+		Name:        sec.Key("name").MustString("OneDarwin_Service"),
+		DisplayName: sec.Key("display_name").MustString("OneDarwin_Service"),
+		Description: sec.Key("description").MustString("OneDarwin_Service"),
 	}
 
 	httpPort := utils.Conf().Section("http").Key("port").MustInt(10008)
@@ -154,7 +154,7 @@ func main() {
 	}
 	if len(os.Args) > 1 {
 		if os.Args[1] == "install" || os.Args[1] == "stop" {
-			figure.NewFigure("EasyDarwin", "", false).Print()
+			figure.NewFigure("OneDarwin", "", false).Print()
 		}
 		log.Println(svcConfig.Name, os.Args[1], "...")
 		if err = service.Control(s, os.Args[1]); err != nil {
@@ -164,7 +164,7 @@ func main() {
 		log.Println(svcConfig.Name, os.Args[1], "ok")
 		return
 	}
-	figure.NewFigure("EasyDarwin", "", false).Print()
+	figure.NewFigure("OneDarwin", "", false).Print()
 	if err = s.Run(); err != nil {
 		log.Println(err)
 		utils.PauseExit()
