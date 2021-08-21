@@ -9,10 +9,10 @@ require (
 	github.com/gin-contrib/static v0.0.1
 	github.com/gin-gonic/gin v1.7.4
 	github.com/jinzhu/gorm v1.9.16
-	github.com/onedss/EasyGoLib v0.0.0-20210821072558-afa209af9cd0
-	github.com/onedss/cors v0.0.0-20210821065549-4ef48e4f77bd
-	github.com/onedss/service v0.0.0-20210821060803-41194e44a259
-	github.com/onedss/sessions v0.0.0-20210821065501-654e37e28824
+	github.com/onedss/EasyGoLib v1.0.0
+	github.com/onedss/cors v1.0.0
+	github.com/onedss/service v1.0.0
+	github.com/onedss/sessions v1.0.0
 	github.com/reactivex/rxgo v1.0.1
 	github.com/shirou/gopsutil v3.21.7+incompatible
 	github.com/teris-io/shortid v0.0.0-20201117134242-e59966efd125
