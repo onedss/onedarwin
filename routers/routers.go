@@ -113,7 +113,7 @@ func Init() (err error) {
 
 	store := sessions.NewGormStoreWithOptions(db.SQLite, sessions.GormStoreOptions{
 		TableName: "t_sessions",
-	}, []byte("OneDarwin@2018"))
+	}, []byte("EasyDarwin@2018"))
 	tokenTimeout := utils.Conf().Section("http").Key("token_timeout").MustInt(7 * 86400)
 	store.Options(sessions.Options{HttpOnly: true, MaxAge: tokenTimeout, Path: "/"})
 	sessionHandle := sessions.Sessions("token", store)
@@ -135,6 +135,21 @@ func Init() (err error) {
 
 		api.GET("/pushers", API.Pushers)
 		api.GET("/players", API.Players)
+
+		api.GET("/stream/start", API.StreamStart)
+		api.GET("/stream/stop", API.StreamStop)
+
+		api.GET("/record/folders", API.RecordFolders)
+		api.GET("/record/files", API.RecordFiles)
+	}
+
+	{
+
+		mp4Path := utils.Conf().Section("rtsp").Key("m3u8_dir_path").MustString("")
+		if len(mp4Path) != 0 {
+			Router.Use(static.Serve("/record", static.LocalFile(mp4Path, true)))
+		}
+
 	}
 
 	return

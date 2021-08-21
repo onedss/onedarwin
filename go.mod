@@ -11,8 +11,10 @@ require (
 	github.com/jinzhu/gorm v1.9.16
 	github.com/onedss/EasyGoLib v1.0.0
 	github.com/onedss/cors v1.0.0
+	github.com/onedss/go-sdp v1.0.0 // indirect
 	github.com/onedss/service v1.0.0
 	github.com/onedss/sessions v1.0.0
+	github.com/pixelbender/go-sdp v1.1.0 // indirect
 	github.com/reactivex/rxgo v1.0.1
 	github.com/shirou/gopsutil v3.21.7+incompatible
 	github.com/teris-io/shortid v0.0.0-20201117134242-e59966efd125

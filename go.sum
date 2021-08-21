@@ -84,6 +84,8 @@ github.com/onedss/cors v0.0.0-20210821065549-4ef48e4f77bd h1:iOfA6Cscz2NRifG0QCF
 github.com/onedss/cors v0.0.0-20210821065549-4ef48e4f77bd/go.mod h1:gSLr56TO1S5aklsk9ZhYAUk7wxAnPYmLVuiQKQ0nNFw=
 github.com/onedss/cors v1.0.0 h1:Knw/RzT3dJNcyitZBrCG2XH7MydmUXlyFO8Tsk9ZZI4=
 github.com/onedss/cors v1.0.0/go.mod h1:gSLr56TO1S5aklsk9ZhYAUk7wxAnPYmLVuiQKQ0nNFw=
+github.com/onedss/go-sdp v1.0.0 h1:Y7TTf9jk5/A61BPueLXKu4V7RmAd6tKhjbwWSCxcEas=
+github.com/onedss/go-sdp v1.0.0/go.mod h1:1RutB2TYuzGqD825WSa89BozVtNfR9//FLPkBFi4ONU=
 github.com/onedss/service v0.0.0-20210821060803-41194e44a259 h1:TR9NzrBu+6m8aOXTAvnfev82yi2LV9bhRbu8RwpIcvE=
 github.com/onedss/service v0.0.0-20210821060803-41194e44a259/go.mod h1:3zt0aF5Xv3B8wCxbjjZKE7eCSrZ5UqgARtfxC1q/Jx0=
 github.com/onedss/service v0.0.0-20210821075023-2704a695652e h1:XU417mt4R3jJmfesYY1o/hpKDyMeeP28vZloUtGztVI=
@@ -94,6 +96,8 @@ github.com/onedss/sessions v0.0.0-20210821065501-654e37e28824 h1:7r5gdhi/0V0cWuo
 github.com/onedss/sessions v0.0.0-20210821065501-654e37e28824/go.mod h1:lhf6o2Ivj1b+mXUXsWABjQa0HDQDNEmxFggyrR8qUuA=
 github.com/onedss/sessions v1.0.0 h1:vF2kOB2qK/OgyfBYTWPqx2xdH/3B7lbcghXmoy64kpU=
 github.com/onedss/sessions v1.0.0/go.mod h1:lhf6o2Ivj1b+mXUXsWABjQa0HDQDNEmxFggyrR8qUuA=
+github.com/pixelbender/go-sdp v1.1.0 h1:rkm9aFBNKrnB+YGfhLmAkal3pC8XYXb9h+172PlrCBU=
+github.com/pixelbender/go-sdp v1.1.0/go.mod h1:6IBlz9+BrUHoFTea7gcp4S54khtOhjCW/nVDLhmZBAs=
 github.com/pkg/errors v0.8.1/go.mod h1:bwawxfHBFNV+L2hUp1rHADufV3IMtnDRdf1r5NINEl0=
 github.com/pkg/errors v0.9.1 h1:FEBLx1zS214owpjy7qsBeixbURkuhQAwrK5UwLGTwt4=
 github.com/pkg/errors v0.9.1/go.mod h1:bwawxfHBFNV+L2hUp1rHADufV3IMtnDRdf1r5NINEl0=
