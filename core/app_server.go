@@ -9,7 +9,7 @@ import (
 	"os"
 )
 
-func Start() {
+func StartApp() {
 	log.SetPrefix("[EasyDarwin] ")
 	log.SetFlags(log.LstdFlags)
 	if utils.Debug {
