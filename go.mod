@@ -4,6 +4,7 @@ go 1.14
 
 require (
 	github.com/StackExchange/wmi v1.2.1 // indirect
+	github.com/akavel/rsrc v0.10.2 // indirect
 	github.com/common-nighthawk/go-figure v0.0.0-20210622060536-734e95fb86be
 	github.com/gin-contrib/pprof v1.3.0
 	github.com/gin-contrib/static v0.0.1

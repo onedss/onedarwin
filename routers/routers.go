@@ -141,6 +141,10 @@ func Init() (err error) {
 
 		api.GET("/record/folders", API.RecordFolders)
 		api.GET("/record/files", API.RecordFiles)
+
+		api.GET("/alarm_event", API.AlarmEvent)
+		api.PUT("/alarm_event", API.AlarmEvent)
+		api.POST("/alarm_event", API.AlarmEvent)
 	}
 
 	{

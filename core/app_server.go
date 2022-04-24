@@ -9,6 +9,19 @@ import (
 	"os"
 )
 
+var (
+	gitCommitCode string
+	buildDateTime string
+)
+
+func SetGitCommitCode(commitcode string) {
+	gitCommitCode = commitcode
+}
+
+func SetBuildDateTime(dateTime string) {
+	buildDateTime = dateTime
+}
+
 func StartApp() {
 	log.SetPrefix("[EasyDarwin] ")
 	log.SetFlags(log.LstdFlags)
